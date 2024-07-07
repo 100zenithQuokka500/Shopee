@@ -15,9 +15,7 @@ const shoppingListEl = document.getElementById("shopping-list")
 
 addButtonEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
-    
-    push(shoppingListInDB, inputValue)
-    
+    push(shoppingListInDB, inputValue)   
     clearInputFieldEl()
 })
 
@@ -47,8 +45,8 @@ function clearInputFieldEl() {
 }
 
 function appendItemToShoppingListEl(item) {
-   let itemId=item[0]
-   let itemValue=item[1]
+    let itemId=item[0]
+    let itemValue=item[1]
     let newEl=document.createElement("li")
     newEl.textContent=itemValue
     newEl.addEventListener('click',function(){
