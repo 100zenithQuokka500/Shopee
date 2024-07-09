@@ -15,7 +15,7 @@ const shoppingListEl = document.getElementById("shopping-list")
 
 addButtonEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
-    if(inputValue===null){
+    if(inputValue ==''){
         alert("Enter an item!!")
     }
     else{
@@ -26,7 +26,7 @@ addButtonEl.addEventListener("click", function() {
 inputFieldEl.addEventListener('keypress',(e)=>{
     if(e.key==='Enter'){
         let inputValue = inputFieldEl.value
-        if(inputValue===null){
+        if(inputValue==''){
             alert("Enter an item!!")
         }
         else{
