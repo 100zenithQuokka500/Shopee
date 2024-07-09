@@ -21,8 +21,15 @@ addButtonEl.addEventListener("click", function() {
 inputFieldEl.addEventListener('keypress',(e)=>{
     if(e.key==='Enter'){
         let inputValue = inputFieldEl.value
-        push(shoppingListInDB, inputValue)
-        clearInputFieldEl()
+        if(inputValue===null){
+            alert("Enter an item!!")
+        }
+        else{
+            push(shoppingListInDB, inputValue)
+            clearInputFieldEl()
+
+        }
+        
     }
 })
 
